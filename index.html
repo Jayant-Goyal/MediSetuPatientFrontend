@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medisetu - Patient Portal</title>
+    
+    <!-- Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            750: '#2d3748',
+                            850: '#1a202c',
+                            950: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 h-dvh overflow-hidden flex flex-col dark:bg-gray-950 dark:text-gray-100 transition-colors duration-200">
+
+    <!-- App Container -->
+    <div id="app" class="flex-1 w-full h-full relative overflow-y-auto outline-none" tabindex="-1" role="main"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" role="alert" aria-live="polite" class="fixed bottom-5 right-5 bg-gray-800 dark:bg-gray-700 text-white px-4 py-2 rounded shadow-lg transform translate-y-32 transition-transform duration-300 z-50 no-print border border-gray-700 dark:border-gray-600">
+        Notification
+    </div>
+
+    <!-- Application Logic -->
+    <script src="script.js" defer></script>
+</body>
+</html>
