@@ -6,9 +6,7 @@ My goal with this project was to build more than just a static UI—I wanted to 
 
 🚀 Live Demo
 
-https://medisetupatient.netlify.app
-
-🔗 View the Live App: [Insert your deployed link here]
+🔗 View the Live App: https://medisetupatient.netlify.app
 
 ✨ What I Built (Features)
 
